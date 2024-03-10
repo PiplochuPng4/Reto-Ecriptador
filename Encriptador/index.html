@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Reto Encripador </title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <section class="interaccion">
+
+            <textarea id="mensaje-usuario" placeholder="Ingrese su texto aqui"></textarea>
+            <div id="pie-mensaje">
+                <div id="alert" class="row" >
+                    <img src="imganes/exclamacion.png" alt="Exclamacion"/>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="row encriptar-desencriptar">
+                    <button id="button-encriptar" data-button="primary">Encriptar</button>
+                    <button id="button-desencriptar" data-button="secondary">Desencriptar</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <div>
+            <section class="resultado">
+                <div id="contenedor-mensaje-resultado-idle">
+                    <div id="mensaje-resultado-idle">
+                        <img id="imgDiv" src="imganes/Muñeco.png" alt="Imagen Idle">
+                        <div>
+                            <h2>Ningún mensaje fue encontrado</h2>
+                            <p>Ingresa el texto que se desea encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenedor-resultado" class="deactive">
+                    <div id="div-resultado">
+                        <p id="mensaje-resultado">test</p>
+                        <button id="button-copiar" data-button="secondary">Copiar</button>
+                        <div class="ventana-globo" style="display: none;">Texto copiado</div>
+                    </div>
+                </div>
+            </section>
+        </div> 
+    </main>
+    <script src="app.js"></script>    
+</body>
+</html>
